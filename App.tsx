@@ -151,7 +151,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <View >
+      <View style={styles.topBar}>
         <Text>AI Chat</Text>
         {isInitializing && (
           <Text>
@@ -197,6 +197,9 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+  topBar: {
+    paddingVertical: 10
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
